@@ -11,7 +11,7 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
-            background-color: #f5e9da; /* Classic warm tone background */
+            background-color: #33a3ff; /* Classic warm tone background */
             transition: background-image 0.5s ease;
             background-size: cover;
             background-position: center;
@@ -29,7 +29,7 @@
         }
         .metawolf {
             position: absolute;
-            color: #f4bf2c; /* Muted yellow for a vintage look */
+            color: #e63946; /* Muted yellow for a vintage look */
             font-size: 2.5vw; /* Responsive font size */
             font-weight: bold;
             text-shadow: 
@@ -41,6 +41,7 @@
             white-space: nowrap;
             cursor: pointer;
             transition: color 0.3s ease;
+            
         }
         .title {
             position: absolute;
@@ -56,6 +57,7 @@
                 -3px  3px 0 #000, 
                  3px  3px 0 #000;
             transition: color 0.3s ease;
+            
         }
         .metawolf:hover {
             color: #ffd700; /* Brighter yellow on hover */
@@ -77,27 +79,30 @@
             left: 65%;
         }
         #title {
-            top: 50%;
+            top: 36%;
             left: 1%;
         }
         @media (max-width: 900px) {
+            .title {
+                font-size: 6vw
+            }
             .metawolf {
-                font-size: 3vw; /* Smaller font size for small screens */
+                font-size: 6vw; /* Smaller font size for small screens */
             }
             #about {
-                top: 50%;
+                top: 48%;
                 left: 20%;
             }
             #artists {
-                top: 55%;
+                top: 58%;
                 left: 20%;
             }
             #clients {
-                top: 60%;
+                top: 68%;
                 left: 20%;
             }
             #contacts {
-                top: 65%;
+                top: 78%;
                 left: 20%;
             }
         }
