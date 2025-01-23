@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METAWOLF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primarycolor: #f6eedf;
+            --secondarycolor: #b67145;
+            --yellow: #f6eedf;
+            --firsttext: #020202;
+            --title: 'Gloock', serif; 
+            --metawolf: 'Playfair Display', serif; 
+            /* --metawolf: "Caesar Dressing", serif;;  */
+        }
+        a {
+            text-decoration: none; /* Removes underlining from links */
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: background-image 0.5s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        #container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            max-width: 1396px;
+            margin: auto;
+        }
+        #splash-image {
+            width: 100%;
+            height: auto;
+        }
+        .orange_grain {
+            /* background: url('/images/SEAMLESS_PAPER_rust.png') repeat; */
+            background: url('https://cdn.prod.website-files.com/677ecb3d985f9e8549c91e92/6784548c9eec5d3a50f0b48a_SEAMLESS_PAPER_rust.png') repeat;
+            background-size: auto;
+            /* mix-blend-mode: multiply; Change this to try other blend modes */
+            color: transparent; /* Text color */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+
+        }
+        .title {
+            position: absolute;
+            font-size: 2.5vw; /* Responsive font size */
+            font-weight: bold;
+            font-family: var(--title); /* Vintage serif font */
+            cursor: pointer;
+            transition: color 0.3s ease;
+            /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */
+        }
+        
+        .metawolf {
+            position: absolute;
+            font-size: 7vw;
+            font-family: var(--metawolf);
+            /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */
+        }
+
+        .metawolf:hover {
+            color: var(--highlightcolor); /* Optional hover effect */
+        }
+
+        .title:hover {
+            color: var(--yellow); /* Brighter yellow on hover */
+        }
+        #about {
+            top: 35%;
+            left: 35%;
+        }
+        #artists {
+            top: 35%;
+            left: 45%;
+        }
+        #clients {
+            top: 35%;
+            left: 55%;
+        }
+        #contacts {
+            top: 35%;
+            left: 65%;
+        }
+        #title-shadow{
+            top: 36.5%;
+            left: 1.5%;
+        }
+        #title {
+            top: 36%;
+            left: 1%;
+        }
+        @media (max-width: 900px) {
+            .title {
+                font-size: 4vw
+            }
+            .metawolf {
+                font-size: 6vw; /* Smaller font size for small screens */
+            }
+            #about {
+                top: 48%;
+                left: 4%;
+            }
+            #artists {
+                top: 58%;
+                left: 4%;
+            }
+            #clients {
+                top: 68%;
+                left: 4%;
+            }
+            #contacts {
+                top: 78%;
+                left: 4%;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="container">
+
+        <!-- <img id="splash-image" src="/images/romulusremus_8.png" alt="Splash Image">
+        <div class="text-wrapper">
+            <a href="/about.html" class="title orange_grain" id="about">about</a>
+            <a href="/artists.html" class="title orange_grain" id="artists">artists</a>
+            <a href="/clients.html" class="title orange_grain" id="clients">clients</a>
+            <a href="/contacts.html" class="title orange_grain" id="contacts">contacts</a>
+            <a href="/index.html" class="metawolf orange_grain" id="title">CONTACTS:</a>
+        </div> -->
+
+        <img id="splash-image" src="https://cdn.prod.website-files.com/677ecb3d985f9e8549c91e92/67844ab87975a978614d700a_romulusremus_8.png" alt="Splash Image">
+        <div class="text-wrapper">
+            <a href="/about" class="title orange_grain" id="about">about</a>
+            <a href="/artists" class="title orange_grain" id="artists">artists</a>
+            <a href="/clients" class="title orange_grain" id="clients">clients</a>
+            <a href="/contacts" class="title orange_grain" id="contacts">contacts</a>
+            <a href="/" class="metawolf orange_grain" id="title">CONTACTS</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

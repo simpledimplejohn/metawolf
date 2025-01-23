@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METAWOLF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primarycolor: #f6eedf;
+            --secondarycolor: #b67145;
+            --yellow: #f6eedf;
+            --firsttext: #020202;
+            --title: 'Gloock', serif; 
+            --metawolf: 'Playfair Display', serif; 
+            /* --metawolf: "Caesar Dressing", serif;;  */
+        }
+                a {
+            text-decoration: none; /* Removes underlining from links */
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: background-image 0.5s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        #container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            max-width: 1396px;
+            margin: auto;
+        }
+        #splash-image {
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            position: absolute;
+            color: var(--secondarycolor); /* Muted yellow for a vintage look */
+            font-size: 2.5vw; /* Responsive font size */
+            font-weight: bold;
+            text-shadow: 
+                -2px -2px 0 var(--firsttext), 
+                 2px -2px 0 var(--firsttext), 
+                -2px  2px 0 var(--firsttext), 
+                 2px  2px 0 var(--firsttext);
+            font-family: var(--title); /* Vintage serif font */
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            
+        }
+        .metawolf {
+            position: absolute;
+            color: var(--secondarycolor); /* Deep red color typical of retro posters */
+            font-size: 4vw; /* Responsive font size */
+            font-weight: bold;
+            font-family: var(--metawolf); /* Elegant serif font */
+            white-space: nowrap;
+            cursor: pointer;
+            
+            transition: color 0.3s ease;
+            
+        }
+        .title:hover {
+            color: var(--yellow); /* Brighter yellow on hover */
+        }
+        #about {
+            top: 35%;
+            left: 35%;
+        }
+        #artists {
+            top: 35%;
+            left: 45%;
+        }
+        #clients {
+            top: 35%;
+            left: 55%;
+        }
+        #contacts {
+            top: 35%;
+            left: 65%;
+        }
+        #title {
+            top: 36%;
+            left: 1%;
+        }
+        @media (max-width: 900px) {
+            .title {
+                font-size: 6vw
+            }
+            .metawolf {
+                font-size: 6vw; /* Smaller font size for small screens */
+            }
+            #about {
+                top: 48%;
+                left: 20%;
+            }
+            #artists {
+                top: 58%;
+                left: 20%;
+            }
+            #clients {
+                top: 68%;
+                left: 20%;
+            }
+            #contacts {
+                top: 78%;
+                left: 20%;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="container">
+
+        <img id="splash-image" src="/images/romulusremus_7.png" alt="Splash Image">
+        <a href="/about.html" class="title" id="about">about</a>
+        <a href="/artists.html" class="title" id="artists">artists</a>
+        <a href="/clients.html" class="title" id="clients">clients</a>
+        <a href="/contacts.html" class="title" id="contacts">contacts</a>
+        <a href="/index.html" class="metawolf" id="title">METAWOLF</a>
+
+        <!-- <img id="splash-image" src="https://cdn.prod.website-files.com/677ecb3d985f9e8549c91e92/67844ab87975a978614d700a_romulusremus_7.png" alt="Splash Image">
+        <a href="/about" class="title" id="about">about</a>
+        <a href="/artists" class="title" id="artists">artists</a>
+        <a href="/clients" class="title" id="clients">clients</a>
+        <a href="/contacts" class="title" id="contacts">contacts</a>
+        <a href="/" class="metawolf" id="title">METAWOLF</a> -->
+    </div>
+</body>
+
+</html>
