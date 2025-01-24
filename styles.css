@@ -1,0 +1,115 @@
+:root {
+    --primarycolor: #f6eedf;
+    --secondarycolor: #b67145;
+    --yellow: #f6eedf;
+    --firsttext: #020202;
+    --title: 'Gloock', serif; 
+    --metawolf: 'Playfair Display', serif; 
+    /* --metawolf: "Caesar Dressing", serif;;  */
+}
+        a {
+    text-decoration: none; /* Removes underlining from links */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: background-image 0.5s ease;
+    background-image: url('images/SEAMLESS_PAPER_light.png'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+#container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 1396px;
+    margin: auto;
+}
+#splash-image {
+    width: 100%;
+    height: auto;
+}
+.orange_grain {
+    /* background: url('/images/SEAMLESS_PAPER_rust.png') repeat; */
+    background: url('https://cdn.prod.website-files.com/677ecb3d985f9e8549c91e92/6784548c9eec5d3a50f0b48a_SEAMLESS_PAPER_rust.png') repeat;
+    background-size: auto;
+    /* mix-blend-mode: multiply; Change this to try other blend modes */
+    color: transparent; /* Text color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+
+}
+
+.title {
+    position: absolute;
+    color: var(--secondarycolor); /* Muted yellow for a vintage look */
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    font-family: var(--title); /* Vintage serif font */
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+}
+.metawolf {
+    position: absolute;
+    color: var(--secondarycolor); /* Deep red color typical of retro posters */
+    font-size: 6vw; /* Responsive font size */
+    /* font-weight: bold; */
+    font-family: var(--metawolf); /* Elegant serif font */
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+}
+.title:hover {
+    color: var(--yellow); /* Brighter yellow on hover */
+}
+#about {
+    top: 50%;
+    left: 5%;
+}
+#artists {
+    top: 60%;
+    left: 5%;
+}
+#clients {
+    top: 70%;
+    left: 5%;
+}
+#contacts {
+    top: 80%;
+    left: 5%;
+}
+#title {
+    top: 36%;
+    left: 0%;
+}
+@media (max-width: 900px) {
+    .title {
+        font-size: 6vw
+    }
+    .metawolf {
+        font-size: 6vw; /* Smaller font size for small screens */
+    }
+    #about {
+        top: 48%;
+        left: 20%;
+    }
+    #artists {
+        top: 58%;
+        left: 20%;
+    }
+    #clients {
+        top: 68%;
+        left: 20%;
+    }
+    #contacts {
+        top: 78%;
+        left: 20%;
+    }
+}
